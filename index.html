@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apontamentos dos Professores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Enviar Apontamento</h1>
+    <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+      <label for="aluno">👤 Aluno:</label>
+      <select name="Aluno" id="aluno" required></select>
+
+      <label for="tipo">📌 Tipo de Apontamento:</label>
+      <select name="Tipo de Apontamento" id="tipo" required>
+        <option value="">Selecione</option>
+        <option value="✅ Positivo">✅ Positivo</option>
+        <option value="⚠️ Negativo">⚠️ Negativo</option>
+        <option value="📱 Notificação ao responsável">📱 Notificação ao responsável</option>
+      </select>
+
+      <label for="obs">📝 Observações:</label>
+      <textarea name="Observações" id="obs" rows="4" placeholder="Descreva o que aconteceu..." required></textarea>
+
+      <button type="submit">📨 Enviar</button>
+
+      <input type="hidden" name="_next" value="https://sua-url-de-agradecimento.com">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <footer>
+      2025, &COPY; Ycaro Miguel
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
