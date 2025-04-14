@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apontamentos dos Professores</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apontamentos do Projeto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>📋 Enviar Apontamento</h1>
-    <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
-      <label for="aluno">👤 Aluno:</label>
-      <select name="Aluno" id="aluno" required></select>
+    <form action="https://formsubmit.co/miguelnegocios001@gmail.com" method="POST">
+      <label for="aluno">Aluno:</label>
+      <select id="aluno" name="aluno" required></select>
 
-      <label for="tipo">📌 Tipo de Apontamento:</label>
-      <select name="Tipo de Apontamento" id="tipo" required>
-        <option value="">Selecione</option>
-        <option value="✅ Positivo">✅ Positivo</option>
-        <option value="⚠️ Negativo">⚠️ Negativo</option>
-        <option value="📱 Notificação ao responsável">📱 Notificação ao responsável</option>
-      </select>
+      <label for="motivo">Motivo:</label>
+      <textarea id="motivo" name="motivo" rows="4" placeholder="Descreva o comportamento, participação ou qualquer ponto relevante..." required></textarea>
 
-      <label for="obs">📝 Observações:</label>
-      <textarea name="Observações" id="obs" rows="4" placeholder="Descreva o que aconteceu..." required></textarea>
-
-      <button type="submit">📨 Enviar</button>
-
-      <input type="hidden" name="_next" value="https://sua-url-de-agradecimento.com">
-      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Enviar Apontamento</button>
+      <!-- <input type="hidden" name="_next" value="https://ycaromiguel.github.io/obrigado">
+      <input type="hidden" name="_captcha" value="false"> -->
     </form>
     <footer>
-      2025, &COPY; Ycaro Miguel
+      <p>Feito por Ycaro Miguel</p>
     </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
