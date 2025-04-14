@@ -3,23 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apontamentos do Projeto</title>
+  <title>Apontamentos</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>📋 Enviar Apontamento</h1>
-    <form action="https://formsubmit.co/miguelnegocios001@gmail.com" method="POST">
+    <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+      
+      <!-- Seção para o nome do professor -->
+      <label for="professor">Professor(a):</label>
+      <select id="professor" name="professor" required>
+        <option value="Conselho">Conselho</option>
+        <option value="Samara">Samara (Língua Portuguesa)</option>
+        <option value="Nirla">Nirla (Matemática)</option>
+        <option value="Adriana">Adriana (Ciências)</option>
+        <option value="Arilton">Arilton (Geografia)</option>
+        <option value="Karen">Karen (História)</option>
+        <option value="Viviana">Viviana (Língua Espanhola/Espanhol e Ensino Religioso)</option>
+        <option value="Yasminie">Yasminie (Língua Inglesa/Inglês)</option>
+        <option value="Lucas">Lucas (Artes)</option>
+        <option value="Professor Beto">Professor Beto (Ed. Física)</option>
+      </select>
+
+      <!-- Seção para selecionar o aluno -->
       <label for="aluno">Aluno:</label>
       <select id="aluno" name="aluno" required></select>
 
-      <label for="motivo">Motivo:</label>
-      <textarea id="motivo" name="motivo" rows="4" placeholder="Descreva o comportamento, participação ou qualquer ponto relevante..." required></textarea>
+      <!-- Seção para selecionar ações boas ou ruins -->
+      <label for="acao">Ação:</label>
+      <select id="acao" name="acao" required>
+        <option value="Aluno recebeu uma notificação">Aluno recebeu uma notificação</option>
+        <option value="Aluno está conversando demais">Aluno está conversando demais</option>
+        <option value="Aluno ajudou o colega">Aluno ajudou o colega</option>
+        <option value="Aluno teve um bom desempenho na atividade">Aluno teve um bom desempenho na atividade</option>
+        <option value="Aluno não entregou a tarefa a tempo">Aluno não entregou a tarefa a tempo</option>
+        <option value="Aluno participou ativamente na aula">Aluno participou ativamente na aula</option>
+        <option value="Aluno foi desrespeitoso com o colega">Aluno foi desrespeitoso com o colega</option>
+        <option value="Aluno entregou um trabalho excelente">Aluno entregou um trabalho excelente</option>
+        <option value="Aluno não fez o dever de casa">Aluno não fez o dever de casa</option>
+      </select>
 
-      <button type="submit">Enviar Apontamento</button>
-      <!-- <input type="hidden" name="_next" value="https://ycaromiguel.github.io/obrigado">
-      <input type="hidden" name="_captcha" value="false"> -->
+      <!-- Campo para descrever detalhes -->
+      <label for="observacao">Observação:</label>
+      <textarea id="observacao" name="observacao" rows="4" placeholder="Descreva o comportamento, participação ou qualquer ponto relevante..." required></textarea>
+
+      <!-- Botão para enviar -->
+      <button type="submit">Enviar Apontamento 🚀</button>
+
+      <!-- Campos ocultos para redirecionamento -->
+      <input type="hidden" name="_next" value="https://SEU_USUARIO.github.io/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
     </form>
     <footer>
       <p>Feito por Ycaro Miguel</p>
