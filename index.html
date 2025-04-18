@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acesso Restrito</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 Acesso Restrito</h1>
+    <p>Insira a senha para acessar o sistema de apontamentos.</p>
+    <form onsubmit="return verificarSenha(event)">
+      <input type="password" id="senha" placeholder="Digite a senha..." required />
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="erro" class="erro"></p>
+  </div>
+
+  <script>
+    function verificarSenha(event) {
+      event.preventDefault();
+      const senhaCorreta = "prof2024"; // Você pode alterar a senha aqui
+      const senhaDigitada = document.getElementById("senha").value;
+
+      if (senhaDigitada === senhaCorreta) {
+        window.location.href = "apontamento.html";
+      } else {
+        document.getElementById("erro").textContent = "Senha incorreta. Tente novamente.";
+      }
+    }
+  </script>
+</body>
+</html>
